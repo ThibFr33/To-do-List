@@ -203,9 +203,13 @@ body {
    ZONE DES LISTES
    ======================================== */
 .lists-container {
+    display: flex;
     width: 100%;
     max-width: 800px;
     min-height: 300px;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin: 0 auto;
 }
 
 .empty-state {
@@ -230,6 +234,105 @@ body {
     font-size: 12px;
     color: rgba(255, 255, 255, 0.8);
     letter-spacing: 1px;
+}
+/* form d'une création de liste */
+form#listForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #5A5778;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    max-width: 600px;
+    width: 100%;
+}
+
+form#listForm input[type="text"], form#listForm select {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    margin: 0.5em;
+}
+
+.task-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+/* bouton d'ajout d'une task */
+#addTaskBtn {
+    padding: 10px 15px;
+    background-color: #87CEEB;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #3F3C60;
+    transition: background 0.3s ease;
+}
+
+#addTaskBtn:hover {
+    background-color: #4A90E2;
+    color: white;
+}
+.task-text.checked {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+
+/* /affichage des listes crées/ */
+.list {
+    background-color: #5A5778;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    width:30%;
+}
+
+.list h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #fff;
+}
+
+.list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.list li.task {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #6E6B8E;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    color: white;
+}
+
+/* niveau d'importance (points de couleur) */
+.priority-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* couleurs en fonction de l'importance de la task */
+.task.haute .priority-dot {
+    background-color: red;
+}
+.task.moyenne .priority-dot {
+    background-color: orange;
+}
+.task.basse .priority-dot {
+    background-color: green;
 }
 
 
