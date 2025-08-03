@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $tasksInfos = [];
     foreach ($tasks as $task) {
         $text = htmlspecialchars(trim($task["text"] ?? ''));
-        $importance = trim($task["importance"] ?? 'moyenne');
+        $importance = $task["importance"] ?? 'moyenne';
         if (!empty($text)) {
             $tasksInfos[] = [
                 "text" => $text,
@@ -117,7 +117,7 @@ $lists = array_reverse($lists);
                     <input type="text" name="title" placeholder="Nom de la liste..." required />
                     <div id="tasksContainer">
                         <div class="task-item">
-                            <input type="text" name="tasks[][text]" placeholder="Ajouter une tâche..." required />
+                            <input type="text" name="tasks[0][text]" placeholder="Ajouter une tâche..." required class="task-text"/>
                             <select name="tasks[0][importance]" required>
                                 <option value="haute">Priorité haute</option>
                                 <option value="moyenne" selected>Priorité moyenne</option>
@@ -131,6 +131,8 @@ $lists = array_reverse($lists);
                         <span class="btn-text">Créer la liste</span>
                     </button>
                 </form>
+
+
             </div>
             
             <!-- Zone où les listes apparaîtront -->
