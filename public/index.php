@@ -6,6 +6,8 @@
     <title>Bubble List - Gestionnaire de tâches</title>
     <!-- Lien vers notre fichier CSS  -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Link vers le fichier script js ! -->
+     <script src="assets/js/script.js" defer></script>
 </head>
 <body>
     <!-- Conteneur principal qui divise l'écran en deux parties -->
@@ -56,7 +58,7 @@
             <!--  avec le poisson et le titre -->
             <header class="header">
                 <div class="header-content">
-                                        <!-- Image du LOGO -->
+                    <!-- Image du LOGO -->
                     <div class="fish-image-container">
                         <img src="assets/images/logo clean bubble.png" alt="Poisson qui lit un livre">
                     </div>

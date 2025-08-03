@@ -199,6 +199,13 @@ body {
     color: white;
 }
 
+.listItem {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid  #B0E0E6;
+}
+
 /* ========================================
    ZONE DES LISTES
    ======================================== */
