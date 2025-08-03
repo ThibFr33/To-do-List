@@ -1,0 +1,86 @@
+/* -----------------------------------------------------
+---------------------- CSS GLOBAL ----------------------
+-------------------------------------------------------- */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -----------------------------------------------------
+-------------------- HEADER et FOOTER ----------------------------
+-------------------------------------------------------- */
+
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    color: white;
+    background-color: #3F3C60;
+}
+
+/* -----------------------------------------------------
+-------------------- CONTAINERS ------------------------
+-------------------------------------------------------- */ 
+
+.offersContainer {  
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    padding: 35px;
+    position: relative;
+}
+
+.offerContainer {
+    background-color: white;
+    width: 35%;
+    border-radius: 15px;
+    padding: 60px;
+    margin: 10px 0 20px 0;
+    gap: 10px;
+}
+
+/* ----------------------------------------------------
+---------------- text et button modification ---------
+------------------------------------------------------- */
+
+.price {
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+}
+
+.firstButton {
+    background-color: #3F3C60;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    position: absolute;
+}
+
+.secondButton {
+    background-color: #3F3C60;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    position: absolute;
+}
+
+ul {
+    margin: 10px 0 10px 0;
+}
+
+/* ----------------------------------------------------
+------------------- main ------------------------------
+------------------------------------------------------- */
+
+main {
+    background-color: rgb(245, 245, 247);
+}
