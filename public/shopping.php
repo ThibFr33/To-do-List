@@ -54,7 +54,7 @@
                     </li>
                 </ul>
                 <!-- form sous forme de btn lié a mon paypal -->
-                <form action="https://paypal.me/YBuyukaydin">
+                <form action="https://paypal.me/YBuyukaydin" target="_blank">
                     <input type="submit" value="S'abonner" class="secondButton">
                 </form>
             </div>
