@@ -46,7 +46,7 @@
                     <div class="filter-icon">
                         <span class="icon-text">S</span>
                     </div>
-                    <a class="filter-text" href="shopping.php">SHOPPING</a>
+                    <a class="filter-text" href="shopping.php" target="_blank">SHOPPING</a>
                 </div>
             </div>
         </aside>
